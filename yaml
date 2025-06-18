@@ -1,0 +1,25 @@
+
+---
+
+## 🧪 Load Testing (JMeter)
+
+- Simulated **60,000 requests/min** (≈1000 requests/sec) using **Apache JMeter**.
+- The system **crashed at higher loads** due to resource exhaustion.
+- Results:
+  - 🧵 **Single Threaded** crashed after ~120 seconds.
+  - 🔁 **Multi Threaded** handled more but still unstable under high load.
+  - 🔁🧵 **Thread Pool** was relatively more stable and resource-efficient.
+
+### 📸 Visual Results
+> Check the uploaded image in the repo:
+- 🔹 1st Graph: Single Threaded
+- 🔹 2nd Graph: Multi Threaded
+- 🔹 3rd Graph: Thread Pool
+
+---
+
+## 💻 How to Run
+
+1. **Compile**:
+   ```bash
+   javac Server.java
